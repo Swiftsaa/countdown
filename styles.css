@@ -1,0 +1,39 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-align: center;
+    color:rgb(244,218,208);
+    background-color: rgb(39,15,70);
+    margin: 5% auto;
+}
+
+.timer-div {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    margin: auto 10%;
+}
+
+.left, .right {
+    flex-basis: 50%; /* Each div takes up half the space */
+    text-align: center; /* Align text to center */
+}
+
+.timer-elements {
+    font-size: 4rem;
+    display: block;
+}
+
+img {
+    transition: .5s;
+    margin-top: 5%;
+    padding: none;
+    animation: updown 2s infinite;
+}
+
+@keyframes updown {
+    0% {transform: translateY(20px);}
+    50% {transform: translateY(-30px);}
+    100% {transform: translateY(20px);}
+}
+  
