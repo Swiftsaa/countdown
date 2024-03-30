@@ -6,7 +6,7 @@
 :root {
     font-family: SingleDay;
     text-align: center;
-    background: rgb(19, 93, 172);
+    background: linear-gradient(#0089BA, #0081CF);
     font-size: 1.2rem;
 }
 
