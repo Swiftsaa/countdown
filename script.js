@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("March 20, 2024 11:50:00").getTime();
+var countDownDate = new Date("April 17, 2024 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -27,6 +27,10 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "SHE'S BACK!";
+    document.getElementById("timer-div").innerHTML = "SHE'S BACK!";
+    document.getElementById("day").innerHTML = "";
+    document.getElementById("hour").innerHTML = "";
+    document.getElementById("minute").innerHTML = "";
+    document.getElementById("second").innerHTML = "";
   }
 }, 1000);
