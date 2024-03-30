@@ -24,8 +24,8 @@ html, body {
 }
 
 .left, .right {
-    flex-basis: 50%; /* Each div takes up half the space */
-    text-align: center; /* Align text to center */
+    flex-basis: 50%; 
+    text-align: center; 
 }
 
 .timer-elements {
@@ -33,11 +33,18 @@ html, body {
     display: block;
 }
 
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
 img {
     transition: .5s;
     margin-top: 5%;
-    padding: none;
+    padding: 10px;
     animation: enlarge 2s infinite;
+    width: 70px; height: 70px;
 }
 
 @keyframes enlarge {
